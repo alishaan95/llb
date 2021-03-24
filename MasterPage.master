@@ -1,0 +1,282 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <%--<link href="css/menu.css" rel="stylesheet" />--%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/responsive%20menu.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="top">
+                <header class="newheader">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <img src="images/logo-brown.jpg" />
+
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+
+                                <%--  <nav>
+                                <ul>
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#" data-toggle="dropdown">ABOUT US <i class="fa fa-angle-down small"></i></a>
+                                        <ul>
+                                            <li>About Us 1</li>
+                                            <li>About Us 2</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">PORTFOLIO <i class="fa fa-angle-down small"></i></a>
+                                        <ul>
+                                            <li>Default</li>
+                                            <li>Images Lightbox</li>
+                                            <li>Iframe Lightbox</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">PRICING</a></li>
+                                    <li><a href="#">BLOG <i class="fa fa-angle-down small"></i></a>
+                                        <ul>
+                                            <li>BLog Right Sidebarr</li>
+                                            <li>Blog Left Sidebar</li>
+                                            <li>Single Sidebar</li>
+                                            <li>Single Left</li>
+                                        </ul>
+
+                                    </li>
+                                    <li><a href="#">ELEMENTS</a></li>
+                                    <li><a href="#">CONTACT <i class="fa fa-angle-down small"></i></a>
+                                         <ul>
+                                            <li>Contact Option 1</li>
+                                            <li>Contact Option 2</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav>--%>
+
+
+                                <nav>
+                                    <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i>Menu</a>
+                                    <ul class="menu">
+                                        <li><a class="homer" href="default.aspx">HOME</a>
+                                        </li>
+                                        <li><a href="#" data-toggle="dropdown">ABOUT US <i class="fa fa-angle-down small"></i></a>
+                                            <ul>
+                                                <li><a href="aboutus.aspx">About Us 1</a></li>
+                                                <li><a href="#">About Us 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">SERVICE</a></li>
+                                        <li><a href="#">PORTFOLIO <i class="fa fa-angle-down small"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Default</a></li>
+                                                <li><a href="#">Images Lightbox</a>
+                                                </li>
+                                                <li><a href="#">Iframe Lightbox</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">PRICING</a></li>
+                                        <li><a href="#">BLOG <i class="fa fa-angle-down small"></i></a>
+                                            <ul>
+                                                <li><a href="#">BLog Right Sidebar</a></li>
+                                                <li><a href="#">Blog Left Sidebar</a></li>
+                                                <li><a href="#">Single Sidebar</a></li>
+                                                <li><a href="#">Single Left</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">ELEMENTS</a></li>
+
+
+
+                                        <li><a href="#">CONTACT US <i class="fa fa-angle-down small"></i></a>
+                                            <ul>
+                                                <li><a href="#">Contact Option 1</a></li>
+                                                <li><a href="#">Contact Option 2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+
+            <footer>
+
+
+                <div class="container-fluid footbg">
+                    <div class="col-md-12 col-sm-12 col-xs-12 footentry">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12 ">
+                                    <div class="paddn">
+                                        <h3>ABOUT US</h3>
+                                    </div>
+                                    <p>
+                                        <a href="http://www.rafamemmel.com/templates/corpboot/template/about.html">Corpboot</a>
+                                        , is tellus ac cursus commodo, mauesris condime fermentum mas sitters.
+                                    </p>
+
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>
+
+                                            857 NW 70th Street, Miami Florida, USA</li>
+                                        <li><i class="fa fa-phone"></i>(+385) 593 6888</li>
+                                        <li><i class="fa fa-envelope"></i>support@templatespremium.net</li>
+                                        <li><i class="fa fa-map-skype"></i>corpboot</li>
+                                    </ul>
+                                </div>
+
+                                <div class="space10">
+                                </div>
+
+                                <div class="col-md-4 col-sm-4 col-xs-12 gallery">
+
+                                    <h3>PHOTO GALLERY</h3>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="space10">
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+
+                                                <img src="images/gall1.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall2.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall3.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall4.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                        </div>
+                                        <div class="space10"></div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall5.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall6.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall7.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall8.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                        </div>
+                                        <div class="space10">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall9.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall10.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall1.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <img src="images/gall2.jpg" height="50" width="70" style="float: left" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <div class="row">
+                                        <h3>NEWSLETTER REGISTRATION</h3>
+
+                                        <p>
+                                            Subscribe to receive latest
+                                <strong>Corpboot</strong>
+                                            news via email. You may unsubscribe this at any time.
+                                        </p>
+
+                                        <div class="row">
+                                            <div class="col-md-9 col-md-10 col-sm-12 col-xs-12 padding">
+                                                <input id="Text1" class="form-control" type="text" placeholder="Enter Your Email..." />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-12 paddingbtn">
+                                                <button type="submit" class="btn">
+                                                    <i class="fa fa-paper-plane-o"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="nwslet">
+                                            <p><strong>No spam:</strong> consectetur adipisicing lorem ipsum.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+            <div class="footerbottom">
+                <div class="container-fluid">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>© CORPBOOT 2016. All Rights Reserved.</p>
+                                    <div>
+                                        <p><i class="fa fa-angle-right"></i>Designed by: <strong>Alishaan Champa</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/slidercarouselminmax.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/stickyheader%20new%20header.js"></script>
+    <script src="js/responsivemenuscript.js"></script>
+    <script src="js/collapsetoggle.js"></script>
+    <script src="js/count.js"></script>
+</body>
+</html>
